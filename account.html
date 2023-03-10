@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Особистий кабінет користувача інтернет магазину MEGROS">
-	<title>Кошик</title>
+	<title>Особистий кабінет</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/hystmodal.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -231,7 +231,7 @@
 					</li>
 					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 						<a class="breadcrumps__link" itemprop="item">
-							<span itemprop="name">Кошик</span>
+							<span itemprop="name">Особистий кабінет</span>
 						</a>
 						<meta itemprop="position" content="2" />
 					</li>
@@ -241,42 +241,237 @@
 	</section>
 
 	<main>
-		<section class="cart-page">
+		<section class="personal">
 			<div class="container">
-				<div class="cart-page__inner">
-					<div class="cart-header">
-						<div class="cart-tittle">Кошик</div>
-						<button class="cart-btn">Оформити замовлення</button>
-					</div>
-					<div class="cart-content">
-						<div class="cart-item item-cart">
-							<div class="product-container">
-								<img src="pic/card-img.jpg" alt="product-image" class="cart-product-img cart-image">
-								<div class="cart-product-name cart-name">
-									<a href="#" class="cart-product-link cart-link">
-										<h2 class="cart-product-tittle cart-prod-tittle">Миючий засіб San Clean Універсал-2000</h2>
-									</a>
-									<div class="cart-product-number cart-product-number">
-										<p>Код товару:&nbsp;</p>
-										<span>563474</span>
+				<div class="personal__inner tabs-wrapper">
+					<aside class="personal__side">
+						<div data-da=".personal__inner,1000,first" class="personal__side-header">
+							<img src="ico/user-personal-white.svg" alt="personal icon" class="personal__side-header-ico">
+							<p data-da=".personal__inner,1000,0" class="personal__side-name">Артем Орешков</p>
+						</div>
+						<ul class="personal__side-list tabs">
+							<li class="personal__side-item tab">
+								<span class="personal__side-ico"></span>
+								<p class="personal__side-text">Мої замовлення</p>
+							</li>
+							<li class="personal__side-item tab">
+								<span class="personal__side-ico"></span>
+								<p class="personal__side-text">Особиста інформація</p>
+							</li>
+							<li class="personal__side-item tab">
+								<span class="personal__side-ico"></span>
+								<p class="personal__side-text">Обране</p>
+							</li>
+							<li class="personal__side-item tab">
+								<span class="personal__side-ico"></span>
+								<p class="personal__side-text">Мої бонуси</p>
+							</li>
+							<li class="personal__side-item">
+								<span class="personal__side-ico"></span>
+								<p class="personal__side-text">Вихід</p>
+							</li>
+						</ul>
+					</aside>
+					<div class="personal__content tab-content">
+						<div class="personal__item orders tab-item">
+							<table class="orders-table">
+								<tr>
+									<th class="orders-tittle">Номер замовлення</th>
+									<th class="orders-tittle">Дата замовлення</th>
+									<th class="orders-tittle">Кількість товарів</th>
+									<th class="orders-tittle">Вартість</th>
+									<th class="orders-tittle">Номер ТТН</th>
+								</tr>
+								<tr>
+									<td class="orders-info">№106648009</td>
+									<td class="orders-info">26.06.2022</td>
+									<td class="orders-info">1шт</td>
+									<td class="orders-info">350 ₴</td>
+									<td class="orders-info">365681648124</td>
+								</tr>
+								<tr>
+									<td class="orders-info">№106648009</td>
+									<td class="orders-info">26.06.2022</td>
+									<td class="orders-info">1шт</td>
+									<td class="orders-info">350 ₴</td>
+									<td class="orders-info">365681648124</td>
+								</tr>
+								<tr>
+									<td class="orders-info">№106648009</td>
+									<td class="orders-info">26.06.2022</td>
+									<td class="orders-info">1шт</td>
+									<td class="orders-info">350 ₴</td>
+									<td class="orders-info">365681648124</td>
+								</tr>
+								<tr>
+									<td class="orders-info">№106648009</td>
+									<td class="orders-info">26.06.2022</td>
+									<td class="orders-info">1шт</td>
+									<td class="orders-info">350 ₴</td>
+									<td class="orders-info">365681648124</td>
+								</tr>
+							</table>
+							<div class="orders-item">
+								<p class="orders-tittle">Номер замовлення</p>
+								<p class="orders-info">№106648009</p>
+								<p class="orders-tittle">Дата замовлення</p>
+								<p class="orders-info">26.06.2022</p>
+								<p class="orders-tittle">Кількість товарів</p>
+								<p class="orders-info">1шт</p>
+								<p class="orders-tittle">Номер замовлення</p>
+								<p class="orders-info">350 ₴</p>
+								<p class="orders-tittle">Номер ТТН</p>
+								<p class="orders-info">365681648124</p>
+							</div>
+						</div>
+						<div class="personal__item personal-info tab-item">
+							<p class="personal-info-tittle">Контактна інформація</p>
+							<form action="#" class="personal-info-form">
+								<div class="personal-info-row">
+									<div class="personal-info-column">
+										<p class="personal-info-label">Ім`я</p>
+										<input type="text" class="personal-info-input input" placeholder="Артем">
+										<p class="personal-info-label">Телефон</p>
+										<input type="tel" class="personal-info-input input" placeholder="+38(098) 564-55-24">
+									</div>
+									<div class="personal-info-column">
+										<div>
+											<p class="personal-info-label">Електронна пошта</p>
+											<input type="text" class="personal-info-input input" placeholder="dima.piersh@gmail.com">
+										</div>
+										<a href="#" data-modal="#remind" class="personal-info-link">Змінити пароль</a>
 									</div>
 								</div>
+								<button type="submit" class="personal-info-btn">Зберегти </button>
+							</form>
+						</div>
+						<div class="personal__item cart tab-item">
+							<div class="cart-header">
+								<div class="cart-tittle">Кошик</div>
+								<button class="cart-btn">Оформити замовлення</button>
 							</div>
-							<div class="cart-quantity number" data-step="1" data-min="1" data-max="100">
-								<div class="cart-quantity-input input-quantity">
-									<button class="cart-quantity-btn number-minus"></button>
-									<input class="number-text" max="3" maxlength="3" autocomplete="off" type="number" name="form[]"
-										value="1">
-									<button class="cart-quantity-btn number-plus"></button>
+							<div class="cart-content">
+								<div class="cart-item item-cart">
+									<div class="product-container">
+										<img src="pic/card-img.jpg" alt="product-image" class="cart-product-img cart-image">
+										<div class="cart-product-name cart-name">
+											<a href="#" class="cart-product-link cart-link">
+												<h2 class="cart-product-tittle cart-prod-tittle">Миючий засіб San Clean Універсал-2000</h2>
+											</a>
+											<div class="cart-product-number cart-product-number">
+												<p>Код товару:&nbsp;</p>
+												<span>563474</span>
+											</div>
+										</div>
+									</div>
+									<div class="cart-quantity number" data-step="1" data-min="1" data-max="100">
+										<div class="cart-quantity-input input-quantity">
+											<button class="cart-quantity-btn number-minus"></button>
+											<input class="number-text" max="3" maxlength="3" autocomplete="off" type="number" name="form[]"
+												value="1">
+											<button class="cart-quantity-btn number-plus"></button>
+										</div>
+									</div>
+									<div class="cart-price-container">
+										<div class="cart-price price-cart">
+											<p class="cart-price-old price-old price">5960</p>
+											<p class="cart-price-main price-main price">5960</p>
+										</div>
+									</div>
+									<button class="cart-product-delete delete"></button>
 								</div>
 							</div>
-							<div class="cart-price-container">
-								<div class="cart-price price-cart">
-									<p class="cart-price-old price-old price">5960</p>
-									<p class="cart-price-main price-main price">5960</p>
+						</div>
+
+						<div class="personal__item bonus tab-item">
+							<div class="bonus-tittle">MEGROS Club</div>
+							<div class="bonus-info">
+								<div class="bonus-info-column">
+									<p class="bonus-info-header">Номер карти</p>
+									<p class="bonus-info-text">248121812654</p>
+								</div>
+								<div class="bonus-info-column">
+									<p class="bonus-info-header">Бонусні кошти</p>
+									<p class="bonus-info-text price">52&nbsp;</p>
+								</div>
+								<div class="bonus-info-column">
+									<p class="bonus-info-header">Усього куплено</p>
+									<p class="bonus-info-text price">5202&nbsp;</p>
+								</div>
+								<div class="bonus-info-column">
+									<p class="bonus-info-header">Статус картки</p>
+									<p class="bonus-info-text">Поки що немає карти</p>
 								</div>
 							</div>
-							<button class="cart-product-delete delete"></button>
+							<div class="bonus-cards">
+								<div class="bonus-item">
+									<div class="bonus-label">Бонусна карта</div>
+									<div class="bonus-card">
+										<img src="pic/bonus-card.jpg" alt="bonus card" class="bonus-card-img">
+										<div class="bonus-card-tittle">Бонусна карта</div>
+										<div class="bonus-card-inner">
+											<div class="bonus-card-description">
+												<p>Купуй товар у магазині <span>MEGROS</span> та отримуй бонусні кошти на наступні покупки</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bonus-item">
+									<div class="bonus-label long">Карта постійного покупця</div>
+									<div class="bonus-label short">Бонусна карта</div>
+									<div class="bonus-card">
+										<img src="pic/silver card.jpg" alt="bonus card" class="bonus-card-img">
+										<div class="bonus-card-tittle">Срібна карта</div>
+										<div class="bonus-card-inner">
+											<div class="bonus-card-description">
+												<p class="bonus-card-description-column percent">5</p>
+												<p class="bonus-card-description-column">Знижка на загальну суму покупки</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--<div class="bonus-item">
+									<div class="bonus-label">Карта постійного покупця</div>
+									<div class="bonus-card">
+										<img src="pic/gold card.jpg" alt="bonus card" class="bonus-card-img">
+										<div class="bonus-card-tittle">Золота карта</div>
+										<div class="bonus-card-inner">
+											<div class="bonus-card-description">
+												<p class="bonus-card-description-column percent">7</p>
+												<p class="bonus-card-description-column">Знижка на загальну суму покупки</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bonus-item">
+									<div class="bonus-label">Карта постійного покупця</div>
+									<div class="bonus-card">
+										<img src="pic/Platinum card.jpg" alt="bonus card" class="bonus-card-img">
+										<div class="bonus-card-tittle">Платинова карта</div>
+										<div class="bonus-card-inner">
+											<div class="bonus-card-description">
+												<p class="bonus-card-description-column percent">10</p>
+												<p class="bonus-card-description-column">Знижка на загальну суму покупки</p>
+											</div>
+										</div>
+									</div>
+								</div>-->
+							</div>
+							<div class="bonus-description">
+								<p class="bonus-description-label">Як працюють бонусні карти</p>
+								<p class="bonus-description-text">Всього існує 4 види карт: звичайна, срібна, золота і платинова.
+									<br><br><span>‒ Звичайна картка.</span> Це найпростіша карта, яка дається
+									від початку новим користувачам. Відсоток знижки складає 0% <br><span>‒ Срібна карта.</span> Ви можете
+									отримати її, якщо сумарно купите
+									товару більше ніж на 10 000 ₴ за весь час. Відсоток знижки складає 5% <br><span>‒ Золота карта.</span>
+									Ви можете отримати її, якщо
+									сумарно купите товару більше ніж на 25 000 ₴ за весь час. Відсоток знижки становить 7% <br><span>‒
+										Платінова карта.</span> Ви можете
+									отримати її, якщо сумарно купите товару більше ніж на 50 000 ₴ за весь час. Відсоток знижки становить
+									10% <br><br> Чим краще
+									карта, тим вищий відсоток сумарної знижки на покупку.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

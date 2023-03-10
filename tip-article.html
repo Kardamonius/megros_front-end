@@ -5,10 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Особистий кабінет користувача інтернет магазину MEGROS">
-	<title>Кошик</title>
+	<meta name="description" content="Головна сторінка інтернет магазину MEGROS">
+	<meta name="keywords" content="побутова хімія, харчові продукти">
+	<title>Як очистити пральну машину всередині?</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/hystmodal.min.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -219,6 +221,35 @@
 
 	<div class="shadow"></div>
 
+	<section class="contact">
+		<div class="contact__inner">
+			<div class="contact__btn hover">
+				<ul class="contact__list">
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/email.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/telegram.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/viber.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/whatsapp.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
 	<section class="breadcrumps">
 		<div class="container">
 			<nav class="breadcrumps__inner">
@@ -230,59 +261,83 @@
 						<meta itemprop="position" content="1" />
 					</li>
 					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<a class="breadcrumps__link" itemprop="item">
-							<span itemprop="name">Кошик</span>
+						<a href="tips.html" class="breadcrumps__link" itemprop="item">
+							<span itemprop="name">Поради щодо обслуговування</span>
 						</a>
 						<meta itemprop="position" content="2" />
+					</li>
+					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a href="tips category.html" class="breadcrumps__link" itemprop="item">
+							<span itemprop="name">Поради щодо прання</span>
+						</a>
+						<meta itemprop="position" content="3" />
+					</li>
+					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a class="breadcrumps__link" itemprop="item">
+							<span itemprop="name">Як очистити пральну машину всередині?</span>
+						</a>
+						<meta itemprop="position" content="4" />
 					</li>
 				</ol>
 			</nav>
 		</div>
 	</section>
 
-	<main>
-		<section class="cart-page">
-			<div class="container">
-				<div class="cart-page__inner">
-					<div class="cart-header">
-						<div class="cart-tittle">Кошик</div>
-						<button class="cart-btn">Оформити замовлення</button>
-					</div>
-					<div class="cart-content">
-						<div class="cart-item item-cart">
-							<div class="product-container">
-								<img src="pic/card-img.jpg" alt="product-image" class="cart-product-img cart-image">
-								<div class="cart-product-name cart-name">
-									<a href="#" class="cart-product-link cart-link">
-										<h2 class="cart-product-tittle cart-prod-tittle">Миючий засіб San Clean Універсал-2000</h2>
-									</a>
-									<div class="cart-product-number cart-product-number">
-										<p>Код товару:&nbsp;</p>
-										<span>563474</span>
-									</div>
-								</div>
-							</div>
-							<div class="cart-quantity number" data-step="1" data-min="1" data-max="100">
-								<div class="cart-quantity-input input-quantity">
-									<button class="cart-quantity-btn number-minus"></button>
-									<input class="number-text" max="3" maxlength="3" autocomplete="off" type="number" name="form[]"
-										value="1">
-									<button class="cart-quantity-btn number-plus"></button>
-								</div>
-							</div>
-							<div class="cart-price-container">
-								<div class="cart-price price-cart">
-									<p class="cart-price-old price-old price">5960</p>
-									<p class="cart-price-main price-main price">5960</p>
-								</div>
-							</div>
-							<button class="cart-product-delete delete"></button>
-						</div>
-					</div>
+	<main class="tips__article">
+		<div class="container">
+			<div class="tips__article-inner">
+				<img src="pic/tip-image1.png" alt="tip" class="tips__article-img">
+				<div class="tips__article-text-container">
+					<p class="tips__article-tittle tips-tittle">Як очистити пральну машину всередині?</p>
+					<p class="tips__article-text">Згодом будь-яка техніка приходить у непридатність. Щоб цей момент не наставав
+						якомога довше, за нею треба доглядати.
+						Навіть якщо зовні пральна машина виглядає доглянутою, всередині вона може покритися накипом.
+					</p>
+					<p class="tips__article-subtittle tittle">Що потрібно чистити у пральній машинці?</p>
+					<p class="tips__article-text">Основні проблеми з барабаном пральної машини – утворення накипу та поява
+						неприємного
+						болотного запаху. Накип утворюється
+						через те, що у водопровідній воді містяться розчинені солі кальцію та магнію. При нагріванні вони
+						розпадаються на
+						вуглекислий газ та нерозчинний осад, який згодом накопичується на поверхні барабана. Навіть ледь помітний
+						наліт
+						створює
+						перешкоди в роботі машини: через надто низьку теплопровідність вода перестає нагріватися і під час прання
+						збільшується
+						витрата електроенергії.Неприємний запах з'являється через бактерії та плісняву. Поживним середовищем для них
+						можуть
+						стати частинки порошку, що нерозчинилися, ворсинки з одягу і крихти їжі з кишень.</p>
+					<p class="tips__article-subtittle tittle">Як прибрати бруд з-під гумки в пральній машині?</p>
+					<p class="tips__article-text">Основні проблеми з барабаном пральної машини – утворення накипу та поява
+						неприємного
+						болотного запаху. Накип утворюється
+						через те, що у водопровідній воді містяться розчинені солі кальцію та магнію. При нагріванні вони
+						розпадаються на
+						вуглекислий газ та нерозчинний осад, який згодом накопичується на поверхні барабана. Навіть ледь помітний
+						наліт
+						створює
+						перешкоди в роботі машини: через надто низьку теплопровідність вода перестає нагріватися і під час прання
+						збільшується
+						витрата електроенергії.Неприємний запах з'являється через бактерії та плісняву. Поживним середовищем для них
+						можуть
+						стати частинки порошку, що нерозчинилися, ворсинки з одягу і крихти їжі з кишень.</p>
 				</div>
+				<img src="pic/tip-image2.png" alt="tip" class="tips__article-img">
 			</div>
-		</section>
+		</div>
 	</main>
+
+	<section class="email">
+		<div class="container">
+			<div class="email__inner">
+				<p class="email__tittle tittle">Дізнавайся про акції, новинки та бонуси перший!</p>
+				<form class="email__form">
+					<input placeholder="Електронна пошта" name="mail" type="text" class="email__input">
+					<button class="email__btn">Підписатися</button>
+				</form>
+			</div>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container footer__container">
@@ -569,7 +624,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="js/hystmodal.min.js"></script>
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/dynamicAdapt.js"></script>

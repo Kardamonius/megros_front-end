@@ -5,10 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Особистий кабінет користувача інтернет магазину MEGROS">
-	<title>Кошик</title>
+	<meta name="description" content="Головна сторінка інтернет магазину MEGROS">
+	<meta name="keywords" content="побутова хімія, харчові продукти">
+	<title>Доставка і оплата</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/hystmodal.min.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -219,6 +221,35 @@
 
 	<div class="shadow"></div>
 
+	<section class="contact">
+		<div class="contact__inner">
+			<div class="contact__btn hover">
+				<ul class="contact__list">
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/email.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/telegram.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/viber.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<img src="ico/whatsapp.svg" alt="" class="contact__ico">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
 	<section class="breadcrumps">
 		<div class="container">
 			<nav class="breadcrumps__inner">
@@ -231,7 +262,7 @@
 					</li>
 					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 						<a class="breadcrumps__link" itemprop="item">
-							<span itemprop="name">Кошик</span>
+							<span itemprop="name">Доставка і оплата</span>
 						</a>
 						<meta itemprop="position" content="2" />
 					</li>
@@ -240,49 +271,36 @@
 		</div>
 	</section>
 
-	<main>
-		<section class="cart-page">
-			<div class="container">
-				<div class="cart-page__inner">
-					<div class="cart-header">
-						<div class="cart-tittle">Кошик</div>
-						<button class="cart-btn">Оформити замовлення</button>
-					</div>
-					<div class="cart-content">
-						<div class="cart-item item-cart">
-							<div class="product-container">
-								<img src="pic/card-img.jpg" alt="product-image" class="cart-product-img cart-image">
-								<div class="cart-product-name cart-name">
-									<a href="#" class="cart-product-link cart-link">
-										<h2 class="cart-product-tittle cart-prod-tittle">Миючий засіб San Clean Універсал-2000</h2>
-									</a>
-									<div class="cart-product-number cart-product-number">
-										<p>Код товару:&nbsp;</p>
-										<span>563474</span>
-									</div>
-								</div>
-							</div>
-							<div class="cart-quantity number" data-step="1" data-min="1" data-max="100">
-								<div class="cart-quantity-input input-quantity">
-									<button class="cart-quantity-btn number-minus"></button>
-									<input class="number-text" max="3" maxlength="3" autocomplete="off" type="number" name="form[]"
-										value="1">
-									<button class="cart-quantity-btn number-plus"></button>
-								</div>
-							</div>
-							<div class="cart-price-container">
-								<div class="cart-price price-cart">
-									<p class="cart-price-old price-old price">5960</p>
-									<p class="cart-price-main price-main price">5960</p>
-								</div>
-							</div>
-							<button class="cart-product-delete delete"></button>
-						</div>
-					</div>
-				</div>
+	<main class="delivery">
+		<div class="container">
+			<div class="delivery__inner">
+				<p class="delivery__tittle about-tittle">Доставка і оплата</p>
+				<p class="delivery__text about-text">Після розміщення замовлення на вказану Вами електронну адресу прийде
+					інформаційний лист про Ваше замовлення. Наш
+					менеджер зв'яжеться з Вами для обговорення деталей.</p>
+				<ul class="delivery__list about-text">
+					<li class="delivery__item">Доставка здійснюється 7 днів на тиждень</li>
+					<li class="delivery__item">Ми відправляємо по всій Україн</li>
+					<li class="delivery__item">За бажанням, 2 рази на тиждень доставляємо кур'єром по Києву</li>
+					<li class="delivery__item">Доставляємо службами Нова Пошта та Укрпошта</li>
+					<li class="delivery__item">Є можливість самостіно забрати покупку зі складу по адресі ... </li>
+				</ul>
+				<img src="/pic/delivery.png" alt="delivery" class="delivery__img">
 			</div>
-		</section>
+		</div>
 	</main>
+
+	<section class="email">
+		<div class="container">
+			<div class="email__inner">
+				<p class="email__tittle tittle">Дізнавайся про акції, новинки та бонуси перший!</p>
+				<form class="email__form">
+					<input placeholder="Електронна пошта" name="mail" type="text" class="email__input">
+					<button class="email__btn">Підписатися</button>
+				</form>
+			</div>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container footer__container">
@@ -569,7 +587,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="js/hystmodal.min.js"></script>
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/dynamicAdapt.js"></script>
