@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Головна сторінка інтернет магазину MEGROS">
+	<meta name="keywords" content="побутова хімія, харчові продукти">
+	<title>Швидка покупка</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/hystmodal.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<!-- header top-->
+		<div class="header__top sp">
+			<div class="container">
+				<div class="header__top-inner">
+					<!--logo-->
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+							<img src="ico/logo.png" alt="logo" class="logo">
+						</a>
+					</div>
+					<!--phone-->
+					<div data-da=".menu__body,1024,2" class="header__phone sp">
+						<a href="tel:0 800 217 600" class="header__phone-link">
+							<span class="header__phone-ico"></span>
+							<div class="header__phone-number">0 800 217 600</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="shadow"></div>
+
+	<main class="order">
+		<div class="container">
+			<div class="order__inner">
+				<div class="order__header">
+					<p class="order__tittle">Швидка покупка</p>
+				</div>
+				<form novalidate action="#" class="order__form js-form">
+					<div class="order__content">
+						<div class="order__column">
+							<div class="order__form-steps" id="steps">
+								<!--step-1-->
+								<div class="order__form-step active" id="step-1">
+									<p class="order__form-step-name"><span class="order__form-step-num">1</span> Контактна інформація
+									</p>
+									<div class="order__form-content">
+										<div class="order__form-item active">
+											<p class="order__form-tittle">Ім'я</p>
+											<input name="name" type="text" class="order__form-input input js-input-name">
+											<p class="order__form-tittle">Телефон</p>
+											<input minlength="10" name="phone" type="tel" class="order__form-input input js-input-phone">
+										</div>
+									</div>
+									<button type="button" class="order__form-btn next-button">Перейти далі до оформлення</button>
+								</div>
+								<!--step-2-->
+								<div class="order__form-step" id="step-2">
+									<p class="order__form-step-name"><span class="order__form-step-num">2</span> Доставка</p>
+									<div class="order__form-content">
+										<p class="order__form-tittle">Ваше місто</p>
+										<input type="text" class="order__form-input input js-input-city active">
+										<p class="order__form-tittle">Спосіб доставки</p>
+										<label class="radio">
+											<input value="Nova Poshta" name="delivery" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Доставка у відділення Нова Пошта</span>
+										</label>
+										<input type="text" class="order__form-input input js-input-delivery"
+											placeholder="Введіть номер відділення">
+										<label class="radio">
+											<input value="Ukr Poshta" name="delivery" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Доставка у відділення УкрПошта</span>
+										</label>
+										<input type="text" class="order__form-input input js-input-delivery"
+											placeholder="Введіть номер відділення">
+										<label class="radio">
+											<input value="courier" name="delivery" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Доставка кур`єром MEGROS</span>
+										</label>
+										<label class="radio">
+											<input value="self pickup" name="delivery" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Самовивіз з нашого складу</span>
+										</label>
+									</div>
+									<button type="button" class="order__form-btn next-button">Перейти далі до оформлення</button>
+									<button type="button" class="order__form-btn prev-button">Повернутися на попередній шаг</button>
+								</div>
+								<!--step-3-->
+								<div id="step-3" class="order__form-step">
+									<p class="order__form-step-name"><span class="order__form-step-num">3</span> Оплата</p>
+									<div class="order__form-content">
+										<p class="order__form-tittle">Спосіб оплати</p>
+										<label class="radio">
+											<input value="cash" name="payment" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Готівкою при отриманні</span>
+										</label>
+										<label class="radio">
+											<input value="card" name="payment" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Сплатити карткою зараз</span>
+										</label>
+										<label class="radio">
+											<input value="PrivatPay" name="payment" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">PrivatPay</span>
+										</label>
+										<label class="radio">
+											<input value="Current account" name="payment" type="radio" class="radio__input js-input-radio">
+											<span class="radio__fake"></span>
+											<span class="radio__text">Розрахунковий рахунок</span>
+										</label>
+									</div>
+									<button type="button" class="order__form-btn prev-button">Повернутися на попередній шаг</button>
+								</div>
+							</div>
+						</div>
+						<div class="order__column">
+							<a href="#" class="order__btn-back">Повернутися до кошика</a>
+							<div class="order__info">
+								<p class="order__info-tittle">Кошик</p>
+								<div class="order__info-row text-info">
+									<p class="order__info-text"><span>8</span> товари на суму</p>
+									<p class="order__info-text price">500</p>
+								</div>
+								<div class="order__info-row text-info">
+									<p class="order__info-text">Вартість доставки</p>
+									<p class="order__info-text price">50</p>
+								</div>
+							</div>
+							<div class="order__footer">
+								<div class="order__footer-price">
+									<p>Сума до сплати:</p>
+									<p class="price">446.80</p>
+								</div>
+								<button type="submit" class="order__footer-btn">
+									Підтвердити замовлення
+								</button>
+								<p class="order__footer-text">Підтверджуючи замовлення, я приймаю умови <br>
+									<a href="#" class="order__footer-link">Публічна оферта</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__inner">
+				<div data-da=".footer__container,1024,last" class="footer__column">
+					<img src="ico/logo.png" alt="logo" class="footer__logo logo">
+					<span class="footer__security-text">Усі права захищені <h2>"MEGROS"</h2><br> Copyright © 2022</span>
+					<div class="footer__payment">
+						<img src="ico/mastercard.png" alt="mastercard" class="footer__payment-img">
+						<img src="ico/visa.png" alt="visa" class="footer__payment-img">
+					</div>
+				</div>
+				<div class="footer__column">
+					<p class="footer__tittle">Каталог</p>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Побутова хімія</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Будівельні матеріали</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Сантехніка</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Електроніка</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<p class="footer__tittle">Користувачам</p>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Про нас</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Доставка і оплата</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Повернення</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Питання-відповідь</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Статті</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Публічна оферта</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<p class="footer__tittle">Контакти</p>
+					<a href="tel:0 800 217 600" class="footer__call">
+						0 800 217 600
+					</a>
+					<p class="footer__phone">Телефонуйте нам з 9:00 до 21:00 <br> Без вихідних</p>
+					<p class="footer__mail">info@megros.com.ua</p>
+					<p class="footer__adress">Велика Васильківська, 138, Київ</p>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link"></a>
+						<a href="#" class="footer__social-link"></a>
+						<a href="#" class="footer__social-link"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/dynamicAdapt.js"></script>
+	<script src="js/order.js"></script>
+</body>
+
+</html>

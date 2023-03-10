@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Особистий кабінет користувача інтернет магазину MEGROS">
+	<title>Кошик</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/hystmodal.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<!-- header top-->
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top-inner">
+					<!--logo-->
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+							<img src="ico/logo.png" alt="logo" class="logo">
+						</a>
+					</div>
+					<!--Nav-->
+					<nav data-da=".menu__body,1024,1" class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-list--item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="header__nav-list--link">Про нас</a>
+							</li>
+							<li class="header__nav-list--item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="header__nav-list--link">Доставка і оплата</a>
+							</li>
+							<li class="header__nav-list--item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="header__nav-list--link">Повернення</a>
+							</li>
+							<li class="header__nav-list--item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="header__nav-list--link">Питання-відповідь</a>
+							</li>
+							<li class="header__nav-list--item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="header__nav-list--link">Статті</a>
+							</li>
+						</ul>
+					</nav>
+					<!--phone-->
+					<div data-da=".menu__body,1024,2" class="header__phone">
+						<a href="tel:0 800 217 600" class="header__phone-link">
+							<span class="header__phone-ico"></span>
+							<div class="header__phone-number">0 800 217 600</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--header down -->
+		<div class="header__down">
+			<div class="container">
+				<div class="header__down-inner">
+					<!--catalog-->
+					<div data-da=".menu__body,1024,first" class="header__catalog">
+						<buttton class="header__catalog-btn">
+							<span class="header__catalog-icon"></span>
+							<p class="header__catalog-tittle">Каталог товарів</p>
+						</buttton>
+						<div class="catalog">
+							<ul id="catalog" class="header__catalog-first">
+								<li class="header__catalog-item catalog__item clickable">
+									<a href="#" class="header__catalog-link">
+										<div class="header__catalog-ico catalog__icon"></div>
+										<h2>Засоби для догляду за білизною</h2>
+									</a>
+									<span class="header__catalog-arrow"></span>
+								</li>
+								<li class="header__catalog-item catalog__item clickable">
+									<a href="#" class="header__catalog-link">
+										<div class="header__catalog-ico catalog__icon"></div>
+										<h2>Засоби для догляду за посудом</h2>
+									</a>
+									<span class="header__catalog-arrow"></span>
+								</li>
+								<li class="header__catalog-item catalog__item clickable">
+									<a href="#" class="header__catalog-link">
+										<div class="header__catalog-ico catalog__icon"></div>
+										<h2>Засоби для чищення твердих поверхонь</h2>
+									</a>
+									<span class="header__catalog-arrow"></span>
+								</li>
+								<li class="header__catalog-item catalog__item clickable">
+									<a href="#" class="header__catalog-link">
+										<div class="header__catalog-ico catalog__icon"></div>
+										<h2>Рідкі мильні вироби</h2>
+									</a>
+									<span class="header__catalog-arrow"></span>
+								</li>
+								<li class="header__catalog-item catalog__item clickable">
+									<a href="#" class="header__catalog-link">
+										<div class="header__catalog-ico catalog__icon"></div>
+										<h2>Засоби гігієни</h2>
+									</a>
+									<span class="header__catalog-arrow"></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--burger-->
+					<button data-modal="#menu" class="header__burger">
+						<img src="ico/menu.svg" alt="burger">
+					</button>
+					<!--search-->
+					<div class="header__search">
+						<form action="" class="header__search-form">
+							<input type="text" placeholder="Пошук товарів" class="header__search-input">
+							<button type="submit" class="header__search-btn"></button>
+						</form>
+					</div>
+					<!--functions-->
+					<div class="header__functions">
+						<!--language -->
+						<button data-da=".menu__body,1024,2" class="header__language select">
+							<div class="header__language-container">
+								<span class="header__language-arrow"></span>
+								<a class="header__language-selected select-main">Укр</a>
+							</div>
+							<ul class="header__language-list select-list">
+								<li class="header__language-item select-item">
+									<a id="1" class="header__language-link select-link" href="#">Укр</a>
+								</li>
+								<li class="header__language-item select-item">
+									<a id="2" class="header__language-link select-link" href="#">Eng</a>
+								</li>
+							</ul>
+						</button>
+						<!--account-->
+						<div class="header__functions-account">
+							<div class="header__account-item">
+								<a href="#" class="header__account-link" data-modal="#account">
+									<img src="ico/cabinet.svg" alt="cabinet-ico" class="header__account-ico">
+								</a>
+							</div>
+							<div class="header__account-item">
+								<a href="#" class="header__account-link">
+									<img src="ico/favorites.svg" alt="favorites-ico" class="header__account-ico">
+								</a>
+							</div>
+							<div class="header__account-item">
+								<span></span>
+								<a href="#" class="header__account-link" data-modal="#cart">
+									<img src="ico/cart.svg" alt="cart-ico" class="header__account-ico">
+								</a>
+								<div class="header__account-cart">
+									<p class="cart__tittle tittle-cart">Кошик</p>
+									<div class="cart__column">
+										<div class="cart__product item-cart">
+											<img src="pic/card-img.jpg" alt="product-image" class="cart__product-img cart-image">
+											<div class="cart__product-name cart-name">
+												<a href="#" class="cart__product-link cart-link">
+													<h2 class="cart__product-tittle cart-prod-tittle">Миючий засіб San Clean Універсал-2000</h2>
+												</a>
+												<div class="cart__product-number cart-product-number">
+													<h5>Код товару:&nbsp;</h5>
+													<span>563474</span>
+												</div>
+											</div>
+											<div class="cart__product-order--info">
+												<p class="cart__product-amount">1</p>
+												<p class="cart__product-price price">562&nbsp;</p>
+											</div>
+										</div>
+										<div class="cart__footer">
+											<p class="cart__sum price">4500&nbsp;</p>
+											<a href="#" class="cart__link" data-modal="#cart">Перейти до кошика</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="shadow"></div>
+
+	<section class="breadcrumps">
+		<div class="container">
+			<nav class="breadcrumps__inner">
+				<ol class="breadcrumps__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a class="breadcrumps__link" itemprop="item" href="index.html">
+							<span itemprop="name">Головна сторінка</span>
+						</a>
+						<meta itemprop="position" content="1" />
+					</li>
+					<li class="breadcrumps__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a class="breadcrumps__link" itemprop="item">
+							<span itemprop="name">Кошик</span>
+						</a>
+						<meta itemprop="position" content="2" />
+					</li>
+				</ol>
+			</nav>
+		</div>
+	</section>
+
+	<main>
+		<section class="cart-page">
+			<div class="container">
+				<div class="cart-page__inner">
+					<div class="cart-header">
+						<div class="cart-tittle">Кошик</div>
+						<button class="cart-btn">Оформити замовлення</button>
+					</div>
+					<div class="cart-content">
+						<div class="cart-item item-cart">
+							<div class="product-container">
+								<img src="pic/card-img.jpg" alt="product-image" class="cart-product-img cart-image">
+								<div class="cart-product-name cart-name">
+									<a href="#" class="cart-product-link cart-link">
+										<h2 class="cart-product-tittle cart-prod-tittle">Миючий засіб San Clean Універсал-2000</h2>
+									</a>
+									<div class="cart-product-number cart-product-number">
+										<p>Код товару:&nbsp;</p>
+										<span>563474</span>
+									</div>
+								</div>
+							</div>
+							<div class="cart-quantity number" data-step="1" data-min="1" data-max="100">
+								<div class="cart-quantity-input input-quantity">
+									<button class="cart-quantity-btn number-minus"></button>
+									<input class="number-text" max="3" maxlength="3" autocomplete="off" type="number" name="form[]"
+										value="1">
+									<button class="cart-quantity-btn number-plus"></button>
+								</div>
+							</div>
+							<div class="cart-price-container">
+								<div class="cart-price price-cart">
+									<p class="cart-price-old price-old price">5960</p>
+									<p class="cart-price-main price-main price">5960</p>
+								</div>
+							</div>
+							<button class="cart-product-delete delete"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__inner">
+				<div data-da=".footer__container,1024,last" class="footer__column">
+					<img src="ico/logo.png" alt="logo" class="footer__logo logo">
+					<span class="footer__security-text">Усі права захищені <h2>"MEGROS"</h2><br> Copyright © 2022</span>
+					<div class="footer__payment">
+						<img src="ico/mastercard.png" alt="mastercard" class="footer__payment-img">
+						<img src="ico/visa.png" alt="visa" class="footer__payment-img">
+					</div>
+				</div>
+				<div class="footer__column">
+					<p class="footer__tittle">Каталог</p>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Побутова хімія</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Будівельні матеріали</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Сантехніка</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Електроніка</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<p class="footer__tittle">Користувачам</p>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Про нас</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Доставка і оплата</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Повернення</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Питання-відповідь</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Статті</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">Публічна оферта</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<p class="footer__tittle">Контакти</p>
+					<a href="tel:0 800 217 600" class="footer__call">
+						0 800 217 600
+					</a>
+					<p class="footer__phone">Телефонуйте нам з 9:00 до 21:00 <br> Без вихідних</p>
+					<p class="footer__mail">info@megros.com.ua</p>
+					<p class="footer__adress">Велика Васильківська, 138, Київ</p>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link"></a>
+						<a href="#" class="footer__social-link"></a>
+						<a href="#" class="footer__social-link"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="hystmodal" id="remind" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+				<div class="remind">
+					<div class="remind__header">
+						<p class="remind__tittle">Зміна пароля</p>
+						<button data-hystclose class="account__close close-button"></button>
+					</div>
+					<form action="#" class="remind__content">
+						<p class="remind__label">Поточний пароль</p>
+						<div class="input__password">
+							<input name="actual-password" type="password" class="remind__input input password">
+							<a href="#" class="password__control"></a>
+						</div>
+						<p class="remind__label">Новий пароль</p>
+						<div class="input__password">
+							<input name="new-password" type="password" class="remind__input input password">
+							<a href="#" class="password__control"></a>
+						</div>
+						<p class="remind__label">Підтвердити новий пароль</p>
+						<div class="input__password">
+							<input name="submit-new-password" type="password" class="remind__input input password">
+							<a href="#" class="password__control"></a>
+						</div>
+						<button class="remind__btn">Зберегти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hystmodal" id="catalog" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+				<div class="catalog">
+					<div class="catalog__header">
+						<p class="catalog__tittle">Каталог товарів</p>
+					</div>
+					<ul class="catalog__first">
+						<li class="catalog__item clickable">
+							<a href="#" class="catalog__link">
+								<div class="catalog__icon"></div>
+								<h2>Засоби для догляду за білизною</h2>
+							</a>
+							<span class="catalog__arrow"></span>
+						</li>
+						<li class="catalog__item clickable">
+							<a href="#" class="catalog__link">
+								<div class="catalog__icon"></div>
+								<h2>Засоби для догляду за посудом</h2>
+							</a>
+							<span class="catalog__arrow"></span>
+						</li>
+						<li class="catalog__item clickable">
+							<a href="#" class="catalog__link">
+								<div class="catalog__icon"></div>
+								<h2>Засоби для чищення твердих поверхонь</h2>
+							</a>
+							<span class="catalog__arrow"></span>
+						</li>
+						<li class="catalog__item clickable">
+							<a href="#" class="catalog__link">
+								<div class="catalog__icon"></div>
+								<h2>Рідкі мильні вироби</h2>
+							</a>
+							<span class="catalog__arrow"></span>
+						</li>
+						<li class="catalog__item clickable">
+							<a href="#" class="catalog__link">
+								<div class="catalog__icon"></div>
+								<h2>Засоби гігієни</h2>
+							</a>
+							<span class="catalog__arrow"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hystmodal" id="menu" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+				<div class="menu">
+					<div class="menu__header tabs-wrapper">
+						<div class="menu__header-top">
+							<img src="ico/logo.png" alt="logo" class="menu__logo">
+						</div>
+						<div class="menu__header-down">
+							<img src="ico/cabinet.svg" alt="cabinet" class="menu__cabinet-ico">
+							<a data-modal="#account" data-tab="1" href="#" class="menu__cabinet-link">Вхід</a>
+							<span></span>
+							<a data-modal="#account" data-tab="2" href="#" class="menu__cabinet-link">Реєстрація</a>
+						</div>
+					</div>
+					<div class="menu__body">
+						<ul class="menu__body-list">
+							<li class="menu__body-item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="menu__body-link" data-modal="#cart">Кошик</a>
+							</li>
+							<li class="menu__body-item">
+								<span class="menu__item-icon"></span>
+								<a href="#" class="menu__body-link">Обране</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hystmodal" id="account" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+				<div class="account__content tabs-wrapper">
+					<div class="account__buttons">
+						<div class="account__tabs tabs">
+							<button class="account__tab tab active">Вхід</button>
+							<button class="account__tab tab">Реєстрація</button>
+						</div>
+						<button data-hystclose class="account__close close-button"></button>
+					</div>
+					<div class="tab-content">
+						<div id="login" data-tab="1" class="account__column tab-item active">
+							<form action="#" class="account__form">
+								<label for="#" class="account__tittle">Телефон або ел.пошта</label>
+								<input type="text" class="account__input input login">
+								<label for="#" class="account__tittle">Пароль</label>
+								<div class="input__password">
+									<input type="password" class="account__input input password">
+									<a href="#" class="password__control"></a>
+								</div>
+								<span><a data-hystclose id="reset-link" class="account__link">Нагадати пароль</a></span>
+								<button type="submit" class="account__btn">Вхід</button>
+							</form>
+						</div>
+						<div id="register" data-tab="2" class="account__column tab-item">
+							<form action="#" class="account__form">
+								<label for="#" class="account__tittle">ПІБ</label>
+								<input type="text" class="account__input input">
+								<label for="#" class="account__tittle">Телефон</label>
+								<input type="text" class="account__input input">
+								<label for="#" class="account__tittle">Електронна пошта</label>
+								<input type="text" class="account__input input">
+								<label for="#" class="account__tittle">Пароль</label>
+								<div class="input__password">
+									<input type="password" class="account__input input password">
+									<a href="#" class="password__control"></a>
+								</div>
+								<button type="submit" class="account__btn">Зареєструватися</button>
+							</form>
+						</div>
+					</div>
+
+					<div class="account__social">
+						<label class="account__or">або</label>
+						<div class="account__row">
+							<a href="#" class="account__social-btn">
+								<img src="ico/google.svg" alt="" class="account__social-ico">
+							</a>
+							<a href="#" class="account__social-btn">
+								<img src="ico/fb.svg" alt="" class="account__social-ico">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="first" class="reset__overlay">
+		<div id="reset-first-step" class="reset">
+			<div class="reset__header">
+				<button data-modal="#account" class="reset__tab">Вхід | Реєстрація</button>
+				<button data-hystclose class="reset__close close-button"></button>
+			</div>
+			<form action="#" class="reset__form">
+				<p class="reset__label">Введіть адресу електронної пошти</p>
+				<input type="text" name="reset" class="reset__input input">
+				<button type="submit" class="reset__btn send">Надіслати код</button>
+			</form>
+			<div class="account__social">
+				<label class="account__or">або</label>
+				<div class="account__row">
+					<a href="#" class="account__social-btn">
+						<img src="ico/google.svg" alt="" class="account__social-ico">
+					</a>
+					<a href="#" class="account__social-btn">
+						<img src="ico/fb.svg" alt="" class="account__social-ico">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="second" class="reset__overlay">
+		<div id="reset-second-step" class="reset">
+			<div class="reset__header">
+				<p class="reset__tittle">Відновлення паролю</p>
+				<button data-hystclose class="reset__close close-button"></button>
+			</div>
+			<div class="reset__info">
+				<p class="reset__text">
+					На вказану вами пошту був відправлений лист з підтвердженням про відновлення паролю.
+				</p>
+				<button class="reset__btn">Підтвердити</button>
+			</div>
+			<div class="account__social">
+				<label class="account__or">або</label>
+				<div class="account__row">
+					<a href="#" class="account__social-btn">
+						<img src="ico/google.svg" alt="" class="account__social-ico">
+					</a>
+					<a href="#" class="account__social-btn">
+						<img src="ico/fb.svg" alt="" class="account__social-ico">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/hystmodal.min.js"></script>
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/dynamicAdapt.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
